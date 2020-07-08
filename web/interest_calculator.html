@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Interest Calculator</title>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+       <!-- 
+            <style type="text/css">
+        #s1 { 
+            height: 200px; 
+            width: 200px; 
+            border-radius: 50%; 
+            display: none; 
+        }
+          
+        #s2 { 
+            height: 200px; 
+            width: 200px; 
+            display: none; 
+        }
+          
+        #s3 { 
+            height: 140px; 
+            width: 200px; 
+            display: none; 
+        }
+          
+        #button { 
+            position: absolute; 
+            left: 100px; 
+            top: 100px; 
+            height: 70px; 
+            width: 300px; 
+            font-size: 25px; 
+            background-color: darkseagreen; 
+        } 
+    </style> 
+      --> 
+
+    </head>
+    <body>
+        
+        <h3><strong>Interest Calculator</strong></h3>
+
+<form method= "POST" name="loandata" form class="form-calculator">
+        
+             <table>
+                <tbody>
+                            <tr><td colspan="3"><b>Enter Loan Information:</b></td><tr>
+
+                    <tr>
+                        <td>Amount Of the Loan(any currency):</td>
+                        <td><input type="text" name="principal"  required  onchange="calculate();" /></td>
+                    </tr>
+                    <tr>
+                        <td>Annual Percentage Rate Of Interest: %</td>
+                        <td><input type="text"  name="interest"  required  onchange="calculate();" /></td>
+                    </tr>
+                    <tr>
+                        <td>Repayment Period In Months:</td>
+                        <td><input type="text" name="months"  required  onchange="calculate();"/></td>
+                    </tr>
+
+                          <tr><td colspan="3"><b>Payment Information:</b></td></tr>
+
+                    <tr>
+                        <td>Your Monthly Payment Will Be:</td>
+                        <td><input type="text" name="payment" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Your Total Payment Will Be:</td>
+                        <td><input type="text" name="total" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Your Total Interest Payments Will Be:</td>
+                        <td><input type="text" name="totalinterest" required /></td>
+                    </tr>
+
+
+                    <tr>
+                        
+                        <td><input type="button" value="Compute"  onClick="calculate()"></td>
+                        <td><input type="button" value="reset" onClick="reset()"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+        <a href="home_page.html"><h3>Cancel</h3></a>
+        
+        <script type="text/javascript">  
+            
+   
+   function calculate() {
+
+ // Get the user's input from the form. Assume it is all valid.
+    // Convert interest from a percentage to a decimal, and convert from
+    // an annual rate to a monthly rate.
+    var principal = document.loandata.principal.value;
+    var interest = document.loandata.interest.value / 100 / 12;
+    var payments = document.loandata.months.value;
+
+    // Now compute the monthly payment figure, using esoteric math.
+    var x = Math.pow(1 + interest, payments);
+    var monthly = (principal*x*interest)/(x-1);
+
+    // Check that the result is a finite number. If so, display the results
+    if (!isNaN(monthly) && (monthly !== Number.POSITIVE_INFINITY) && (monthly !== Number.NEGATIVE_INFINITY)) {
+        document.loandata.payment.value = round(monthly);
+        document.loandata.total.value = round(monthly * payments);
+        document.loandata.totalinterest.value = round((monthly * payments) - principal);
+    } else {
+        // Otherwise, the user's input was probably invalid, so don't
+        // display anything.
+        document.loandata.payment.value = "";
+        document.loandata.total.value = "";
+        document.loandata.totalinterest.value = "";
+    }
+    }
+
+// This simple method rounds a number to two decimal places.
+function round(x) {
+    return Math.round(x*100)/100;
+    
+    }
+
+
+
+
+</script>                            
+                                              
+  </body>
+</html>

@@ -1,0 +1,326 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 4, 2020, 3:34:19 PM
+    Author     : USER
+*/
+
+.calculator-recurring-deposit 
+h2{
+    font-size:20px;
+    line-height:28px;
+    text-transform:capitalize;
+    border-bottom:none;padding:10px 12px;
+    display:none}
+
+.calculator-recurring-deposit .toasterror{
+    width:auto;
+    background-color:#555;
+    color:#fff;
+    text-align:center;
+    border-radius:6px;
+    padding:8px 6px;
+    position:absolute;
+    z-index:999;
+    opacity:.9;
+    top:-45px;
+    left:0;
+    display:block
+}
+
+.calculator-recurring-deposit .mn-space.mT5.pull-left{
+    padding-right:7px
+}
+
+.calculator-recurring-deposit .datee{
+    border:1px solid red!important
+}
+
+.calculator-recurring-deposit h3{
+    margin:0;
+    padding:0;
+    font-weight:400;
+    font-size:19px;
+    margin-left:10px
+}
+
+.calculator-recurring-deposit h4{
+    margin:0;
+    padding:0;
+    font-weight:400;
+    font-size:16px
+}
+
+.calculator-recurring-deposit h5{
+    margin:0;
+    padding:0;
+    font-weight:400;
+    font-size:14px
+}
+
+.calculator-recurring-deposit .rangeInt{
+    -webkit-appearance:none;
+    border-radius:10px;
+    margin-left:-9px;
+    width:215px;
+    padding:.5em;
+    height:10px
+}
+
+.calculator-recurring-deposit .rangeInt.infra-calc{
+    -webkit-appearance:none;
+    border-radius:10px;
+    margin-left:-9px;
+    width:140px;
+    padding:.5em;
+    height:10px
+}
+
+.calculator-recurring-deposit .rangeInt::selection{
+    background:#00337e
+}
+
+.calculator-recurring-deposit .rangeInt:focus{outline:0}
+.calculator-recurring-deposit .rangeInt::-ms-fill-lower{background:#00337e}
+.calculator-recurring-deposit .rangeInt::-webkit-slider-runnable-track{
+    width:auto;
+    height:10px;
+    cursor:pointer;
+    animate:.2s;
+    box-shadow:2px 1px 1px #dedede;background:0 0;
+    border-radius:0;border:1px solid #ddd;border-radius:25px}
+
+.calculator-recurring-deposit .rangeInt::-webkit-slider-thumb{
+    box-shadow:1px 1px 1px #b5b5b5;
+    border:1px solid #d6d6d6;height:20px;width:20px;
+    border-radius:13px;background:#fff;cursor:pointer;
+    -webkit-appearance:none;
+    margin-top:-7.5px;
+}
+
+.calculator-recurring-deposit input[type=range]:focus::-webkit-slider-thumb{box-shadow:inset 0 1px 1px rgba(29,134,255,.9),0 0 8px rgba(29,134,255,.9)
+}
+
+.calculator-recurring-deposit .rge{
+    height:10px
+}
+
+.calculator-recurring-deposit .btinput_box{
+    line-height:1;
+    vertical-align:top;                       
+    margin-left:16px; 
+    border:none;
+    background:0 0;
+    display:table-cell
+}
+
+.calculator-recurring-deposit .btinput_box_one{
+    line-height:1;
+    vertical-align:initial;
+    margin-left:4px;
+    border:none;
+    text-align:left;
+    background:0 0;
+    display:table-cell
+}
+
+.calculator-recurring-deposit .borderno{
+    border-top:none!important
+}
+
+.calculator-recurring-deposit .tdata{
+    text-align:left;
+    width:60%;
+    border:none!important
+}
+
+.calculator-recurring-deposit .tdata-two{
+    text-align:right;
+    width:40%;
+    position:relative;
+    border:none!important}
+
+.calculator-recurring-deposit .rupeebtc{
+    position:absolute;
+    margin-left:4px;
+    margin-top:8px
+}
+
+.calculator-recurring-deposit .rupeebtc-sm{
+    position:absolute
+}
+
+.calculator-recurring-deposit .rupeebtc-one{
+    position:absolute;
+}
+
+.calculator-recurring-deposit .rupeebtc-two{
+    position:absolute;
+    margin-left:0;
+}
+
+.calculator-recurring-deposit .twor{
+    position:relative;
+    display:inline;
+}
+.calculator-recurring-deposit .rupeebtc-two .curr{
+    position:absolute
+}
+.calculator-recurring-deposit #month2{
+    text-align:left;
+    padding:15px;
+}
+.calculator-recurring-deposit #month3{
+    text-align:left;
+    padding:15px;
+}
+
+.calculator-recurring-deposit #month4{
+    text-align:left;
+    padding:15px;
+}
+
+.calculator-recurring-deposit #month5{
+    text-align:left;
+    padding:15px;
+}
+
+.calculator-recurring-deposit #month6{
+    text-align:left;
+    padding:15px;
+}
+.calculator-recurring-deposit .tdata-two.fs18{
+    text-align:right;
+    width:40%;
+}
+.calculator-recurring-deposit #oc_total{
+    text-align:right;
+    font-size:17px;
+}
+.calculator-recurring-deposit #hdfc_total{
+    text-align:right;
+    font-size:17px;
+}
+.calculator-recurring-deposit .cdata{
+    width:60%;
+    align:center;
+}
+.calculator-recurring-deposit .cdata-two{
+    width:40%;
+    align:center;
+    text-align:right;
+}
+.calculator-recurring-deposit .pB0{
+    padding-bottom:0!important;
+}
+.calculator-recurring-deposit .pB10{
+    padding-bottom:10px!important;
+}
+.calculator-recurring-deposit .mT5{
+    margin-top:5px!important;
+}
+.calculator-recurring-deposit .calculator .calc-contContr #seniorIntRate{
+    font-weight:600;
+    margin-left:15px;
+}
+.calculator-recurring-deposit .mT20{
+    margin-top:20px!important;
+}
+.calculator-recurring-deposit .mB0{
+    margin-bottom:0!important;
+}
+.calculator-recurring-deposit .mR5{
+    margin-right:5px;
+}
+.calculator-recurring-deposit .mB5{
+    margin-bottom:5px;
+}
+.calculator-recurring-deposit .mB10{
+    margin-bottom:10px!important;
+}.calculator-recurring-deposit .balTrf.table .section{
+    margin-bottom:20px;
+    overflow:hidden;
+}
+.calculator-recurring-deposit .balTrf.table .section:after,
+.calculator-recurring-deposit .balTrf.table .section:before{content:" ";display:table}
+.calculator-recurring-deposit .balTrf.table .section:after{clear:both}
+.calculator-recurring-deposit .balTrf.table .section:last-child{margin-bottom:0}
+.calculator-recurring-deposit .calculator-recurring-deposit .table>tbody>tr>td{padding:8px;line-height:1;vertical-align:top;border:none}
+.calculator-recurring-deposit .calculator-recurring-deposit p:last-child{margin-bottom:0}
+.calculator-recurring-deposit .rowbtc row{margin-left:-5px;margin-right:-5px;position:relative}
+.calculator-recurring-deposit .calculator-recurring-deposit .text-label{font-weight:700}
+.calculator-recurring-deposit .btcbt.btn{box-shadow:0 1px 1px rgba(0,0,0,.3);
+                                         text-transform:uppercase}.btcbt.btn:hover,.calculator-recurring-deposit .btcbt.btn:focus{background-color:#286090}
+.calculator-recurring-deposit .btcbt.btn-primary{background:#1d86ff;border:1px solid transparent;font-size:16px;padding:6px 20px;margin-right:10px}
+.calculator-recurring-deposit .btcbt.btn-fix-compare{margin-left:10px;padding-left:20px}
+.calculator-recurring-deposit .btcbt.btn-primary{background:#1d86ff;border:1px solid transparent;font-size:16px;padding:6px 20px;color:#fff;margin-right:10px}
+.calculator-recurring-deposit .btcbt.btn:last-child{margin-bottom:10px}.calculator-recurring-deposit .btcbt.btn{box-shadow:0 1px 1px rgba(0,0,0,.3);text-transform:uppercase;border-radius:3px;width:auto;margin-right:10px}
+.calculator-recurring-deposit .calrow{padding:0 0 20px 0}
+.calculator-recurring-deposit .balTrf .table th{background:#bedcff;font-weight:700}
+.calculator-recurring-deposit .balTrf .table th.valine-bottom{vertical-align:bottom!important}
+.calculator-recurring-deposit .balTrf .table tr.altRow{background:#f2f2f2!important}
+.calculator-recurring-deposit .balTrf .table tr.boldText{font-weight:700!important}
+.calculator-recurring-deposit .tableheader-bt{background:#bedcff;border-top:none!important}
+.calculator-recurring-deposit .tableheader-bt.table>tbody>tr>td{border:none!important}
+.calculator-recurring-deposit .balTrf .table-striped>tbody>tr:nth-of-type(odd){background-color:#f2f2f2}
+.calculator-recurring-deposit .rowbtc.row.mB10 .col-lg-8 .small{font-size:13px!important}
+.calculator-recurring-deposit .calculator .label-txt{padding:7px 5px 0 0;float:left}
+.calculator-recurring-deposit .btcbt.btnstyle2{padding:6px 11px}
+.calculator-recurring-deposit .balTrf .table .section h2{text-transform:capitalize}
+.calculator-recurring-deposit .calculator label.label-txt{font-weight:400}
+.calculator-recurring-deposit .calrow{padding:0 0 20px 0}
+.calculator-recurring-deposit .calc-contContr{padding:0 10px 10px 10px}
+.calculator-recurring-deposit .calc-contContr:after,.calculator-recurring-deposit 
+.calc-contContr:before{display:table}
+.calculator-recurring-deposit .calc-contContr:after{clear:both}
+.calculator-recurring-deposit .mB5{margin-bottom:5px}
+.calculator-recurring-deposit .mL5{margin-left:5px}
+.calculator-recurring-deposit .calcbutton{text-align:right}
+.calculator-recurring-deposit .heightp{line-height:2!important}
+.calculator-recurring-deposit .emislider4{width:194px;margin-top:8px;height:10px}
+.calculator-recurring-deposit .emislider4.infra-emislid{width:125px;margin-top:8px;height:10px}
+.calculator-recurring-deposit .emiCont{background-color:#eee;padding:10px;font-size:20px;margin-top:10px;margin-bottom:25px;height:auto}
+.calculator-recurring-deposit .emiCont .emiAmt{font-size:28px;font-weight:700}
+.calculator-recurring-deposit .emiCont .emiText{font-size:20px;font-weight:600}
+.calculator-recurring-deposit .rowbtc.row .btc.col-sm-6:first-child{padding-left:0}
+.calculator-recurring-deposit .rowbtc.row .btc.col-sm-6:last-child{padding-right:0}
+.calculator-recurring-deposit ul.flip-radio li input[type=radio]{margin:0}
+.calculator-recurring-deposit ul.flip-radio li span{padding:0 0 0 4px}
+.calculator-recurring-deposit ul.nav.nav-tabs li.active{border-top:5px solid #00337e}
+.calculator-recurring-deposit ul.nav.nav-tabs li{width:25%;border-top:5px solid transparent}
+.calculator-recurring-deposit ul.nav.nav-tabs li.active{border-top:5px solid #00337e;border-radius:0}
+.calculator-recurring-deposit ul.nav.nav-tabs li>a{border-radius:0;margin:0;text-align:center;color:#444}
+.calculator-recurring-deposit ul.nav.nav-tabs li.active a{color:#00337e;font-weight:700;text-align:center}
+.calculator-recurring-deposit h3.loan-text{margin-bottom:10px}
+.calculator-recurring-deposit .calc-data-table{padding:0}
+.calculator-recurring-deposit .table.table-borderless>tbody>tr>td,.table.table-borderless>tbody>tr>th,.table.table-borderless>tfoot>tr>td,.table.table-borderless>thead>tr>td,.table.table-borderless>thead>tr>th,.table.table-borderless>tr>th{border-top:none!important}.calculator-recurring-deposit table.table.table-borderless tbody>tr:nth-child(even){background-color:#f5f5f5}
+.calculator-recurring-deposit table.table.table-borderless tr.total-table-emi{font-weight:700}
+.calculator-recurring-deposit .btn-reset-default:hover{color:#333;background-color:#e6e6e6;border-color:#adadad}
+.calculator-recurring-deposit .btn-reset-default{border:1px solid #1d86ff;color:#1d86ff;font-size:16px;padding:6px 20px}
+.calculator-recurring-deposit .btn-reset{width:auto;box-shadow:0 1px 1px rgba(0,0,0,.3);text-transform:none;border-radius:3px;text-decoration:none;display:inline-block;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;margin-right:10px;margin-bottom:10px}.calculator-recurring-deposit .amt-regx-error,.calculator-recurring-deposit .amterror{border:1px solid red;border-radius:5px 5px 5px 5px;-webkit-transition:opacity 3s ease-in-out;-moz-transition:opacity 3s ease-in-out;-ms-transition:opacity 3s ease-in-out;-o-transition:opacity 3s ease-in-out;opacity:1}.calculator-recurring-deposit .apply-text{white-space:nowrap;font-weight:700}
+.calculator-recurring-deposit select.form-control.months-control{width:50%!important}
+.calculator-recurring-deposit #interestRate{margin-top:15px!important;font-weight:600}
+.calculator-recurring-deposit.col-lg-12.col-sm-12.ng-scope{padding:0}
+.calculator-recurring-deposit .senior-text{margin-top:15px}
+.calculator-recurring-deposit span.pm{position:absolute;margin-top:-30px;margin-left:142px}
+.calculator-recurring-deposit .rowbtc.row.mT20 input[type=date],input[type=datetime-local],input[type=month],input[type=time]{line-height:20px;border-radius:5px;width:180px}.calculator-recurring-deposit button.ui-datepicker-trigger{float:right;margin-top:-30px;margin-right:30px}
+.calculator-recurring-deposit hdfc-datepicker#dateControl input[type=text]{width:86%}.calculator-recurring-deposit hdfc-datepicker#dateControl{z-index:100001;position:relative}.calculator-recurring-deposit hdfc-datepicker#dateControl label{color:#444;font-size:14px;display:none}
+.calculator-recurring-deposit input.radio-button-input{margin:0}.calculator-recurring-deposit .icon-down-open-big,.calculator-recurring-deposit .icon-up-open-big{display:none}@media only screen and (max-width:767px){.calculator-recurring-deposit .icon-down-open-big,.calculator-recurring-deposit .icon-up-open-big{color:#1d85fe;float:right;margin-right:15px;display:block}
+                                                                                                                                                                                                        .calculator-recurring-deposit h2{font-size:18px;padding:10px;display:block}.calculator-recurring-deposit input#dueDateValue{width:50%}
+                                                                                                                                                                                                        .calculator-recurring-deposit hdfc-datepicker#dateControl input[type=text]{width:100%}
+                                                                                                                                                                                                        .calculator-recurring-deposit button.ui-datepicker-trigger{position:absolute;margin-top:-30px;right:-28px}
+                                                                                                                                                                                                        .calculator-recurring-deposit .emiCont{font-size:16px}
+                                                                                                                                                                                                        .calculator-recurring-deposit .emiCont .emiAmt{font-size:22px}}@media only screen and (max-width:539px){.calculator-recurring-deposit input#dueDateValue{width:50%}.calculator-recurring-deposit hdfc-datepicker#dateControl input[type=text]{width:100%}.calculator-recurring-deposit button.ui-datepicker-trigger{position:absolute;margin-top:-30px;right:-26px}
+                                                                                                        .calculator-recurring-deposit .toasterror{width:auto}}@media only screen and (max-width:320px){.calculator-recurring-deposit input#dueDateValue{width:50%}.calculator-recurring-deposit hdfc-datepicker#dateControl input[type=text]{width:100%}
+                                                                                                                                                                                                       .calculator-recurring-deposit button.ui-datepicker-trigger{position:absolute;margin-top:-30px;right:-28px}
+                                                                                                                                                                                                       .calculator-recurring-deposit .toasterror{width:auto}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){
+                                                                                                            .calculator-recurring-deposit .toasterror{width:130%;top:-30px}}
+                                                                                                            .calculator-recurring-deposit .tool-tip-error{visibility:visible;width:100%;background-color:#555;color:#fff;text-align:center;border-radius:6px;padding:8px 6px;position:absolute;z-index:1;opacity:.9;transition:opacity 1s;top:-43px;left:0}
+                                                                                                            .calculator-recurring-deposit .tool-tip-error-cal{visibility:visible;width:100%;background-color:#555;color:#fff;text-align:center;border-radius:6px;padding:8px 0;position:absolute;z-index:1;opacity:.9;transition:opacity 1s;top:151px;left:0}
+                                                                                                            .calculator-recurring-deposit .montherr{border:1px solid red}
+                                                                                                            .calculator-recurring-deposit .toasterrorcal{width:80%;background-color:#555;color:#fff;text-align:center;border-radius:6px;padding:8px 6px;position:absolute;z-index:1;opacity:.9;transition:opacity 1s;top:45%;display:block;margin:30px 0 0 30px}
+                                                                                                            
+                                                                                                            

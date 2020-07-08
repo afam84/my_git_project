@@ -1,0 +1,49 @@
+
+
+
+.table-col-inner {
+width: 150%;
+height: 100px;
+
+}
+
+.table-col {
+width:1000px;
+height:10px;
+    
+}
+ 
+
+.table-heading {
+    width:1000px;
+    padding:20px;
+   height: 0px;
+    
+
+}
+
+.table-line {
+width: 100px;
+height:120px;
+}
+
+.table-grid2 {
+width: 50px;
+line-height: 100px;
+
+}
+
+
+
+
+.country-icon{
+    width: 0px;
+    height: 20px;
+    padding-right:5px;
+}
+
+.table-col td {
+    padding: 10px;
+    height: 0px
+}
+
